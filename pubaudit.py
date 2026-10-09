@@ -41,7 +41,12 @@ def is_real_pub(path):
 
 def find_pubs(root):
     pubs = []
-    for dirpath, _dirs, files in os.walk(root):
+
+    def _onerror(err):
+        print(f"warning: cannot scan {err.filename}: {err.strerror}",
+              file=sys.stderr)
+
+    for dirpath, _dirs, files in os.walk(root, onerror=_onerror):
         for name in sorted(files):
             if name.lower().endswith(".pub"):
                 pubs.append(os.path.join(dirpath, name))
@@ -55,6 +60,8 @@ def run(cmd, timeout=300):
 def pdf_pages(pdf_path):
     try:
         out = run(["pdfinfo", pdf_path], timeout=30)
+        if out.returncode != 0:
+            return None
         for line in out.stdout.splitlines():
             if line.startswith("Pages:"):
                 return int(line.split(":", 1)[1].strip())
@@ -66,6 +73,8 @@ def pdf_pages(pdf_path):
 def pdf_text_chars(pdf_path):
     try:
         out = run(["pdftotext", pdf_path, "-"], timeout=60)
+        if out.returncode != 0:
+            return None
         return len(out.stdout.strip())
     except Exception:
         return None
@@ -74,6 +83,15 @@ def pdf_text_chars(pdf_path):
 def convert_one(pub_path, out_dir, profile_dir):
     """Convert one .pub to PDF. Returns (pdf_path_or_None, soffice_output)."""
     before = set(os.listdir(out_dir)) if os.path.isdir(out_dir) else set()
+    expected = os.path.join(
+        out_dir, os.path.splitext(os.path.basename(pub_path))[0] + ".pdf")
+    # Never let a stale PDF from a previous run pose as this run's success:
+    # the output dir is ours, so remove the old product before converting.
+    if os.path.isfile(expected):
+        try:
+            os.remove(expected)
+        except OSError:
+            pass
     cmd = [
         "soffice", "--headless", "--norestore",
         f"-env:UserInstallation=file://{profile_dir}",
@@ -85,8 +103,8 @@ def convert_one(pub_path, out_dir, profile_dir):
         rc = proc.returncode
     except subprocess.TimeoutExpired:
         return None, "TIMEOUT after 300s"
-    expected = os.path.join(
-        out_dir, os.path.splitext(os.path.basename(pub_path))[0] + ".pdf")
+    except OSError as e:
+        return None, f"could not launch converter: {e}"
     if os.path.isfile(expected) and os.path.getsize(expected) > 0:
         return expected, output.strip()
     # Fallback: any new PDF in out_dir counts (name normalisation edge cases)
@@ -197,7 +215,12 @@ def main(argv=None):
     os.makedirs(out_root, exist_ok=True)
     pubs = find_pubs(root)
     # Do not re-audit our own output tree if it lives inside the scan root
-    pubs = [p for p in pubs if not os.path.abspath(p).startswith(out_root)]
+    # (component-aware containment, so a sibling like "pubaudit-output-backup"
+    # is not wrongly excluded)
+    def _inside_output(p):
+        ap = os.path.abspath(p)
+        return os.path.commonpath([ap, out_root]) == out_root
+    pubs = [p for p in pubs if not _inside_output(p)]
     if not pubs:
         print("No .pub files found.")
         return 0

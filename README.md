@@ -16,6 +16,8 @@ Converters can report success and produce no file at all. They can also produce 
 
 Everything runs on your own machine. Your files are never uploaded anywhere — relevant if the archive belongs to a school, church, club, or small office.
 
+Working through an archive before the October 13 deadline? Start with the [30-minute rescue checklist](https://gist.github.com/alapha888/5057703ca29367493f688330a7154940) — inventory, convert, and verify, step by step.
+
 ## Requirements
 
 - Python 3 (standard library only)

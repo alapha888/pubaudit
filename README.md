@@ -48,9 +48,9 @@ Seven test files (five real Publisher flyers, one plain-text file renamed to `.p
 - PubAudit verifies that a PDF exists, has pages, and carries text. It cannot prove the layout *looks* right; `REVIEW` files need human eyes.
 - This is a command-line tool for people comfortable running one command.
 
-## Planned, if there is demand
+## Windows edition (in development)
 
-A Windows desktop version for non-technical users (pick a folder, get the report, no command line), indicatively **$29 one-time**. It gets built only if enough people ask — [register interest by email](mailto:alapha888@gmail.com?subject=%5BPubAudit%20Waitlist%5D&body=I%20am%20interested%20in%20a%20Windows%20version%20of%20PubAudit.%0AHow%20many%20.pub%20files%20I%20need%20to%20convert%20(roughly)%3A%0AWhere%20the%20files%20live%20(school%20%2F%20church%20%2F%20office%20%2F%20personal)%3A%0AWhat%20I%20have%20tried%20so%20far%3A) and say roughly how many `.pub` files you need to rescue.
+A Windows desktop version for non-technical users (pick a folder, get the report, no command line) is in development, indicatively **$29 one-time**. It is not on sale yet: the first release is still pending final verification. [Register interest by email](mailto:alapha888@gmail.com?subject=%5BPubAudit%20Waitlist%5D&body=I%20am%20interested%20in%20a%20Windows%20version%20of%20PubAudit.%0AHow%20many%20.pub%20files%20I%20need%20to%20convert%20(roughly)%3A%0AWhere%20the%20files%20live%20(school%20%2F%20church%20%2F%20office%20%2F%20personal)%3A%0AWhat%20I%20have%20tried%20so%20far%3A) to be notified when it ships, and say roughly how many `.pub` files you need to rescue.
 
 ## License
 

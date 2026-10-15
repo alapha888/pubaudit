@@ -21,6 +21,7 @@ import shutil
 import subprocess
 import sys
 import tempfile
+from pathlib import Path
 
 TEXT_OK_THRESHOLD = 20  # chars of extractable text for a clean OK
 
@@ -94,7 +95,10 @@ def convert_one(pub_path, out_dir, profile_dir):
             pass
     cmd = [
         "soffice", "--headless", "--norestore",
-        f"-env:UserInstallation=file://{profile_dir}",
+        # Path.as_uri() builds a valid file URI on every platform; a raw
+        # "file://" + path concatenation is malformed on Windows
+        # (backslashes, missing third slash) and LibreOffice stalls on it.
+        f"-env:UserInstallation={Path(profile_dir).as_uri()}",
         "--convert-to", "pdf", "--outdir", out_dir, pub_path,
     ]
     try:

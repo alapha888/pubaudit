@@ -55,7 +55,12 @@ def find_pubs(root):
 
 
 def run(cmd, timeout=300):
-    return subprocess.run(cmd, capture_output=True, text=True, timeout=timeout)
+    # Decode explicitly as UTF-8: text mode on Windows falls back to the
+    # locale codepage and pdftotext's UTF-8 output can fail to decode
+    # (observed as an empty text read in pubaudit-windows smoke run
+    # 38800604187; alapha888/pubaudit#1).
+    return subprocess.run(cmd, capture_output=True, text=True,
+                          encoding="utf-8", errors="replace", timeout=timeout)
 
 
 def pdf_pages(pdf_path):

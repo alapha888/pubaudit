@@ -52,6 +52,10 @@ Seven test files (five real Publisher flyers, one plain-text file renamed to `.p
 
 A Windows desktop version for non-technical users (pick a folder, get the report, no command line), indicatively **$29 one-time**, is not on sale yet. Its conversion engine passed end-to-end verification on real Windows CI on **2026-10-16**: real LibreOffice, real `.pub` samples, and the Windows engine and this CLI agreed on every file's verdict. The installer is built (its SHA-256 will be published with the listing at launch). What is still unverified: the GUI window itself has not yet run interactively, so drag-and-drop and visual rendering remain untested. [Register interest by email](mailto:alapha888@gmail.com?subject=%5BPubAudit%20Waitlist%5D&body=I%20am%20interested%20in%20a%20Windows%20version%20of%20PubAudit.%0AHow%20many%20.pub%20files%20I%20need%20to%20convert%20(roughly)%3A%0AWhere%20the%20files%20live%20(school%20%2F%20church%20%2F%20office%20%2F%20personal)%3A%0AWhat%20I%20have%20tried%20so%20far%3A) to be notified when it ships, and say roughly how many `.pub` files you need to rescue.
 
+## More from the same author
+
+- Full index of free tools, paid tiers, and waitlists: https://gist.github.com/alapha888/fe51434e80dbc0ef5610aeab38b025f4
+
 ## License
 
 MIT

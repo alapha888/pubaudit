@@ -24,6 +24,8 @@ Already ran it? [Reading a PubAudit report](docs/reading-the-report.md) explains
 
 Report looks wrong, or the archive is large? [Troubleshooting and large archives](docs/troubleshooting-and-large-archives.md) covers the patterns that point at the environment instead of your files (missing converter, missing `pdfinfo`, one file timing out), why re-running after a fix is safe, and how to stage a big archive starting with a pilot subfolder.
 
+Setting up for the first time? [Installing PubAudit](docs/install-and-preflight.md) covers how to install Python, LibreOffice, and poppler on Ubuntu, Debian, Fedora, and macOS, why a missing `soffice` stops the run loudly while missing poppler degrades the report silently, and a four-command preflight plus a one-file smoke test to run before the whole archive.
+
 ## Requirements
 
 - Python 3 (standard library only)

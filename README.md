@@ -20,6 +20,8 @@ Working through an archive now that support has ended? Start with the [30-minute
 
 Found the files after support already ended? Start with [Found .pub files after Publisher support ended?](docs/after-publisher-support-ended.md) — why verification comes before deleting anything, and a safe order of operations.
 
+Already ran it? [Reading a PubAudit report](docs/reading-the-report.md) explains how each status is decided (including the 20-character text floor and the two different REVIEW cases), what to do with each pile, and what the report does not prove.
+
 ## Requirements
 
 - Python 3 (standard library only)

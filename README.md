@@ -28,6 +28,8 @@ Setting up for the first time? [Installing PubAudit](docs/install-and-preflight.
 
 Working a large archive in a spreadsheet? [Working with the CSV report](docs/working-with-the-csv-report.md) documents all seven CSV columns (including the two the HTML report does not show), why blank `pages`/`text_chars` means "not measured" rather than zero, and how to filter the REVIEW and FAILED piles into a work list.
 
+Left with a pile of REVIEW files? [Clearing the REVIEW pile](docs/clearing-the-review-pile.md) is the visual check itself — what to look at on each PDF, in what order, why it is a completeness check rather than a comparison against the original, and what each outcome (cleared / failed / unsure) allows you to do with the original `.pub`.
+
 ## Requirements
 
 - Python 3 (standard library only)

@@ -26,6 +26,8 @@ Report looks wrong, or the archive is large? [Troubleshooting and large archives
 
 Setting up for the first time? [Installing PubAudit](docs/install-and-preflight.md) covers how to install Python, LibreOffice, and poppler on Ubuntu, Debian, Fedora, and macOS, why a missing `soffice` stops the run loudly while missing poppler degrades the report silently, and a four-command preflight plus a one-file smoke test to run before the whole archive.
 
+Working a large archive in a spreadsheet? [Working with the CSV report](docs/working-with-the-csv-report.md) documents all seven CSV columns (including the two the HTML report does not show), why blank `pages`/`text_chars` means "not measured" rather than zero, and how to filter the REVIEW and FAILED piles into a work list.
+
 ## Requirements
 
 - Python 3 (standard library only)

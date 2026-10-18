@@ -22,6 +22,8 @@ Found the files after support already ended? Start with [Found .pub files after 
 
 Already ran it? [Reading a PubAudit report](docs/reading-the-report.md) explains how each status is decided (including the 20-character text floor and the two different REVIEW cases), what to do with each pile, and what the report does not prove.
 
+Report looks wrong, or the archive is large? [Troubleshooting and large archives](docs/troubleshooting-and-large-archives.md) covers the patterns that point at the environment instead of your files (missing converter, missing `pdfinfo`, one file timing out), why re-running after a fix is safe, and how to stage a big archive starting with a pilot subfolder.
+
 ## Requirements
 
 - Python 3 (standard library only)

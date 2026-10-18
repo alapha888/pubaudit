@@ -18,6 +18,8 @@ Everything runs on your own machine. Your files are never uploaded anywhere — 
 
 Working through an archive now that support has ended? Start with the [30-minute rescue checklist](https://gist.github.com/alapha888/5057703ca29367493f688330a7154940) — inventory, convert, and verify, step by step.
 
+Found the files after support already ended? Start with [Found .pub files after Publisher support ended?](docs/after-publisher-support-ended.md) — why verification comes before deleting anything, and a safe order of operations.
+
 ## Requirements
 
 - Python 3 (standard library only)

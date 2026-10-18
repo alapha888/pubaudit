@@ -30,6 +30,8 @@ Working a large archive in a spreadsheet? [Working with the CSV report](docs/wor
 
 Left with a pile of REVIEW files? [Clearing the REVIEW pile](docs/clearing-the-review-pile.md) is the visual check itself — what to look at on each PDF, in what order, why it is a completeness check rather than a comparison against the original, and what each outcome (cleared / failed / unsure) allows you to do with the original `.pub`.
 
+Left with a pile of FAILED files? [Working through the FAILED pile](docs/working-through-the-failed-pile.md) is the reading check — the two FAILED note shapes in the report, why one of them will never be fixed by re-running and the other sometimes will, what the converter's own words in the note tell you, and why FAILED is the strongest reason in the report to keep the original `.pub`.
+
 ## Requirements
 
 - Python 3 (standard library only)

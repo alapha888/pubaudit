@@ -32,6 +32,8 @@ Left with a pile of REVIEW files? [Clearing the REVIEW pile](docs/clearing-the-r
 
 Left with a pile of FAILED files? [Working through the FAILED pile](docs/working-through-the-failed-pile.md) is the reading check — the two FAILED note shapes in the report, why one of them will never be fixed by re-running and the other sometimes will, what the converter's own words in the note tell you, and why FAILED is the strongest reason in the report to keep the original `.pub`.
 
+Looking for a specific guide? The [guide index](docs/guide-index.md) maps every guide in this repository — setup, reading the report, working the REVIEW and FAILED piles, and troubleshooting — to the job it is for, with a suggested order for a full archive.
+
 ## Requirements
 
 - Python 3 (standard library only)

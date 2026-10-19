@@ -7,6 +7,7 @@ PubAudit's guides grew one at a time — a page per stage of rescuing an archive
 - **You found `.pub` files and have not run anything yet.** Start with [Found .pub files after Publisher support ended?](after-publisher-support-ended.md) — why verification comes before deleting anything, and a safe order of operations. Its one rule governs everything below: do not delete any original `.pub` file until its replacement PDF has been verified, not just produced.
 - **You are setting up for the first time.** Go to [Installing PubAudit](install-and-preflight.md) before your first real run.
 - **You already have a report.** Go to [Reading a PubAudit report](reading-the-report.md) first, then to the pile you are working: REVIEW, FAILED, or the CSV work list.
+- **You want to see a report before you have one.** Read [A worked example: four files, one run, end to end](worked-example-four-files.md) — one real run on a fixture set whose verdicts were pinned in advance, with the actual report rows in view.
 
 ## Before the first run
 
@@ -14,6 +15,7 @@ PubAudit's guides grew one at a time — a page per stage of rescuing an archive
 
 ## Reading the result
 
+- [A worked example: four files, one run, end to end](worked-example-four-files.md) — a real run on four fixture files (two image-heavy flyers, a renamed text file, a truncated file), the report it wrote row by row, and where each row's work goes next. The reference point for a first report.
 - [Reading a PubAudit report](reading-the-report.md) — how each status (`OK`, `REVIEW`, `FAILED`) is decided, including the 20-character text floor and the two different REVIEW cases; what to do with each pile; and what the report does not prove.
 - [Working with the CSV report](working-with-the-csv-report.md) — all seven CSV columns, including the two the HTML report does not show; why a blank `pages` or `text_chars` means "not measured" rather than zero; and how to filter the REVIEW and FAILED piles into a work list in a spreadsheet.
 

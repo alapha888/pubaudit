@@ -32,6 +32,8 @@ Left with a pile of REVIEW files? [Clearing the REVIEW pile](docs/clearing-the-r
 
 Left with a pile of FAILED files? [Working through the FAILED pile](docs/working-through-the-failed-pile.md) is the reading check — the two FAILED note shapes in the report, why one of them will never be fixed by re-running and the other sometimes will, what the converter's own words in the note tell you, and why FAILED is the strongest reason in the report to keep the original `.pub`.
 
+Want to see a report before you have one of your own? [A worked example: four files, one run, end to end](docs/worked-example-four-files.md) walks a real four-file run whose verdicts were pinned in advance — two image-heavy flyers landing in `REVIEW`, and both `FAILED` shapes (a renamed text file, and a truncated file the converter exited 0 on while producing no PDF) — with the actual report rows in view.
+
 Looking for a specific guide? The [guide index](docs/guide-index.md) maps every guide in this repository — setup, reading the report, working the REVIEW and FAILED piles, and troubleshooting — to the job it is for, with a suggested order for a full archive.
 
 ## Requirements

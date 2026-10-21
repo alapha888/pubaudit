@@ -70,4 +70,4 @@ PubAudit is free and open source (MIT, Python standard library only). It convert
 
 New to the situation? [Found .pub files after Publisher support ended?](after-publisher-support-ended.md) gives the safe order of operations before you run anything, and the [30-minute rescue checklist](https://gist.github.com/alapha888/5057703ca29367493f688330a7154940) walks the whole rescue in checklist form.
 
-A Windows desktop edition (pick a folder, get the report, no command line) is in development at an indicative $29 one-time. It is not on sale yet; the free command-line tool above is complete and usable today.
+A Windows desktop edition (pick a folder, get the report, no command line) is on sale for $29 one-time: https://alapha888.gumroad.com/l/lvodxo — the free command-line tool is complete and usable today.

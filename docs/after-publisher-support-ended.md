@@ -41,7 +41,7 @@ In a verified test run over seven files (five real Publisher flyers, one plain-t
 
 ## Not comfortable with a command line?
 
-A Windows desktop edition (pick a folder, get the report, no command line) is in development, indicatively $29 one-time. It is not on sale yet. The free command-line tool above is complete and usable today; the Windows edition exists for the person who inherits one of these archives and has never opened a terminal.
+A Windows desktop edition (pick a folder, get the report, no command line) is on sale for $29 one-time: https://alapha888.gumroad.com/l/lvodxo — the free command-line tool is complete and usable today; the Windows edition is for the person who inherits one of these archives and has never opened a terminal.
 
 ## Limits, stated plainly
 

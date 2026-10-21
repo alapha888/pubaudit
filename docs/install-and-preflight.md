@@ -46,7 +46,7 @@ export PATH="/Applications/LibreOffice.app/Contents/MacOS:$PATH"
 
 ### Windows
 
-Use the Windows desktop edition when it ships, or run this command-line tool inside WSL (Windows Subsystem for Linux) and follow the Ubuntu steps above inside the WSL shell. Running the script natively in a Windows terminal is not the tested path.
+Use the Windows desktop edition (on sale — see below), or run this command-line tool inside WSL (Windows Subsystem for Linux) and follow the Ubuntu steps above inside the WSL shell. Running the script natively in a Windows terminal is not the tested path.
 
 ## Preflight: four commands, thirty seconds
 
@@ -83,4 +83,4 @@ PubAudit is free and open source (MIT, Python standard library only). It convert
 
 Just found the files? [Found .pub files after Publisher support ended?](after-publisher-support-ended.md) gives the safe order of operations before you run anything. Already ran it and the pattern looks wrong? [Troubleshooting and large archives](troubleshooting-and-large-archives.md) covers the environment patterns and how to stage a big archive.
 
-A Windows desktop edition (pick a folder, get the report, no command line) is in development at an indicative $29 one-time. It is not on sale yet; the free command-line tool above is complete and usable today.
+A Windows desktop edition (pick a folder, get the report, no command line) is on sale for $29 one-time: https://alapha888.gumroad.com/l/lvodxo — the free command-line tool is complete and usable today.

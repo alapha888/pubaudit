@@ -45,4 +45,4 @@ PubAudit is free and open source (MIT, Python standard library only). It convert
 
 Reading the report for the first time? [Reading a PubAudit report](reading-the-report.md) explains how each status is decided. Working a large FAILED pile out of the CSV? [Working with the CSV report](working-with-the-csv-report.md) covers filtering by the note's opening words.
 
-A Windows desktop edition (pick a folder, get the report, no command line) is in development at an indicative $29 one-time. It is not on sale yet; the free command-line tool above is complete and usable today.
+A Windows desktop edition (pick a folder, get the report, no command line) is on sale for $29 one-time: https://alapha888.gumroad.com/l/lvodxo — the free command-line tool is complete and usable today.

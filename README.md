@@ -72,6 +72,8 @@ A Windows desktop version for non-technical users (select a folder, get the repo
 
 ## More from the same author
 
+- **RunnerDriftAudit** — Free CLI that scans GitHub Actions workflows for runner-label and tool drift ahead of the ubuntu-latest 26.04 migration; the Pro edition ($29 one-time) scans a whole local workspace in one run. https://github.com/alapha888/runner-drift-audit
+- **Agent Skills (English)** — Five free skills for commit messages, code review, deep research, meeting notes, and technical-writing proofreading. Free, MIT. https://github.com/alapha888/agent-skills-en
 - Full index of free tools, paid tiers, and waitlists: https://gist.github.com/alapha888/fe51434e80dbc0ef5610aeab38b025f4
 
 ## License
